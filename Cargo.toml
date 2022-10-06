@@ -1,0 +1,10 @@
+[package]
+name = "hyper-wasm-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1"
+http = { git = "https://github.com/hyperium/http", rev = "34a9d6bdab027948d6dea3b36d994f9cbaf96f75" }
+hyper = { git = "https://github.com/hyperium/hyper", rev = "89048f4054434435aa6eb4729d46787a89ad5857", features = ["server", "http1", "http2"] }
+tokio = { version = "1.21.2", features = ["rt", "macros", "net"] }
